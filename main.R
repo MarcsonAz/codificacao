@@ -23,7 +23,9 @@ pacman::p_load( char = c(
   'tidyverse',
   'readxl',
   'tidytext',
-  'janitor'
+  'janitor',
+  'ggtext',
+  'patchwork'
 ))
 
 for(codigos in fs::dir_ls(paste0(dir,"/codigos/"))){

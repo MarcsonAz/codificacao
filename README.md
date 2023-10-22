@@ -15,7 +15,7 @@ Pesquisa: Percepção sobre o Trabalho Remoto.
 * 28/09/2023 - ver estrutura geral de resultados do artigo
 * 30/09/2023 - 2 perguntas que estavam faltando
 * 05/10/2023 - rankings com as 2 perguntas??
-* 22/10/2023 - arrumando módulos par versão final
+* 22/10/2023 - arrumando módulos par versão final - 100/414 ajuste manual negativo
 
 
 ##### Processos
