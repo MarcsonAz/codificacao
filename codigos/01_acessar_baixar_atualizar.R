@@ -5,6 +5,7 @@
 
 # ./codigos/acessar_baixar_atualizar.R
 # versao 24/09/2023
+# versao 26/10/2023 - funcao sem download
 # ACESSAR DADOS 
 
 #require(fs); require(googlesheets4); require(stringr); require(openxlsx)
@@ -42,10 +43,11 @@ criar_nome_arquivo <- function(dir,tipo = c(
 }
 
 
-acessar_baixar_atualizar <- function(dir, principal = TRUE){
+acessar_baixar_atualizar <- function(dir, novo_download = FALSE){
   
-  if(principal){
-    nome_arquivo = paste0(dir,'/dados/base_formulario_bruto_principal.xlsx')
+  if(!novo_download){
+    #nome_arquivo = paste0(dir,'/dados/base_formulario_bruto_principal.xlsx')
+    nome_arquivo = paste0(dir,'/dados/base_formulario_bruto_2023_09_24_14_20_44_ajuste_manual.xlsx')
   }else{
     #url <- "https://docs.google.com/spreadsheets/d/1U6Cf_qEOhiR9AZqTqS3mbMF3zt2db48ZP5v3rkrAEJY/edit#gid=780868077"
     

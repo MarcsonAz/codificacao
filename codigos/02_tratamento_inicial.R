@@ -6,6 +6,8 @@
 # versao 24/09/2023
 # TRATAMENTO INICIAL
 
+# RÓTULOAS DE VARIAVEIS, TIRAR IDENTIFICADORES E INDICADOR DE TRABALHO REMOTO 
+
 tratamento_inicial <- function(dir, nome_arquivo_entrada){
   
   #require(tidyverse);require(readxl)
@@ -45,6 +47,8 @@ tratamento_inicial <- function(dir, nome_arquivo_entrada){
   
   if(dim(df2)[1] == missing_ct) df2$condicao_trabalho = NULL
   if(dim(df2)[1] == missing_ag) df2$avaliacao_geral = NULL
+  
+  # criar dummy para identificar se ja trabalhou ou trabalha remoto
   
   df2 = df2 %>% mutate(
     indicador_remoto_hibrido = case_when(

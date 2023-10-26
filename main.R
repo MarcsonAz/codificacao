@@ -50,7 +50,8 @@ nome_arquivo_tratado_inicial <- tratamento_inicial(
   dir, nome_arquivo_dado_atualizado)
 
 
-# codificacao
+# 5 - tratamento das caracteristicas dos respondentes
+# tratamento perfil
 
 nome_arquivo_tratado_perfil <- tratamento_perfil(
   dir, nome_arquivo_tratado_inicial)
@@ -62,4 +63,27 @@ nome_arquivo_tratado_principais <- tratamento_principais(
 # atualizar versao final
 # gerar tabelas
 # gerar gráficos
+
+
+a = df %>% 
+  filter(indicador_remoto_hibrido==1 & remoto_atividade_paralela=="Nunca.") %>% 
+  select(remoto_atividade_paralela, remoto_atividade_paralela_descricao) %>% 
+  mutate(ind = case_when(
+    str_detect(remoto_atividade_paralela_descricao,"não") ~ 'OK',
+    .default = 'Errado'
+  ))
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
 

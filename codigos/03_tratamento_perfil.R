@@ -6,6 +6,10 @@
 # ./codigos/tratamento_perfil.R
 # TRATAMENTO PERFIL
 
+# ajuste de variáveis de informações dos usuários
+# setor, profissão, sexo, faixa etária, ter filhos, local de residência,
+# dias de trabalho,
+
 tratamento_perfil <- function(dir,nome_arquivo_entrada){
   
   #require(tidyverse);require(readxl);require(janitor)

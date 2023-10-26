@@ -16,7 +16,7 @@ Pesquisa: Percepção sobre o Trabalho Remoto.
 * 30/09/2023 - 2 perguntas que estavam faltando
 * 05/10/2023 - rankings com as 2 perguntas??
 * 22/10/2023 - arrumando módulos par versão final - 100/414 ajuste manual negativo
-
+* 26/10/2023 -  - revisao inicial - funcao bruto add sem download - ajustes no main - 225/414 ajuste manual negativo
 
 ##### Processos
 
